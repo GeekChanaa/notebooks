@@ -51,14 +51,18 @@
   overflow: hidden;
   transition:all .5s cubic-bezier(0.19, 1, 0.22, 1);
 }
-
+.subnotes-container.open{
+  max-height: 200px;
+}
 .subnotes-container>li{
   list-style:none;
   display: flex;
   max-height: 40px;
   transition:all .5s cubic-bezier(0.19, 1, 0.22, 1);
 }
-
+.subnotes-container>li.open{
+  max-height:100px;
+}
 .subnotes-container>li>a{
   text-decoration: none;
   color: #656c73;
@@ -77,7 +81,9 @@
   transition:all .5s cubic-bezier(0.19, 1, 0.22, 1);
   flex:1;
 }
-
+.lastnotes-container.open{
+  left: 0;
+}
 .lastnotes-container>li{
   list-style:none;
 }

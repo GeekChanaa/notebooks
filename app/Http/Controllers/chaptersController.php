@@ -9,8 +9,9 @@ class chaptersController extends Controller
 {
     //LISTING OF CHAPTERS
     public function list($section_id){
-      $list_chapters = chapter::where('section_id','=',$section_id)->first();
+      $list_chapters = chapter::where('section_id','=',$section_id)->get();
       $data=[
+        'section_id' => $section_id,
         'list_chapters' => $list_chapters,
       ];
       return view('dashboard.chapters.list')->with($data);
@@ -21,7 +22,7 @@ class chaptersController extends Controller
       $data=[
         'section_id' => $section_id,
       ];
-      return view('dashboard.chapters.list')->with($data);
+      return view('dashboard.chapters.create')->with($data);
     }
 
     //ADD CHAPTER
@@ -41,7 +42,7 @@ class chaptersController extends Controller
     }
 
     //UPDATE CHAPTERS FORM
-    public function update($id){
+    public function update($section_id,$id){
       $chapter = chapter::where('id','=',$id)->first();
       $data=[
         'chapter' => $chapter,
@@ -54,11 +55,11 @@ class chaptersController extends Controller
       $chapter = chapter::where('id','=',$request->id)->first();
       $chapter->title = $request->title;
       $chapter->save();
-      return redirect('/dashboard/section/'.$section->notebook_id.'/sections');
+      return redirect('/dashboard/section/'.$chapter->section_id.'/chapters');
     }
 
     //SHOW CHAPTERS FORM
-    public function show($id){
+    public function show($section_id,$id){
       $chapter = chapter::where('id','=',$id)->first();
       $data=[
         'chapter' => $chapter,
