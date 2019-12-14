@@ -27,6 +27,7 @@
           <button type="submit" class="btn btn-danger">Delete</button>
         </form>
         <a class="btn btn-danger" href="{{url('/dashboard/notebook/'.$notebook_id.'/sections/update/'.$section->id.'')}}">Update</a>
+        <a class="btn btn-danger" href="{{url('/dashboard/section/'.$section->id.'/chapters')}}">Chapters</a>
       </td>
     </tr>
   @endforeach

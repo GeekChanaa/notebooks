@@ -61,7 +61,7 @@ Route::post('/dashboard/chapters/add','chaptersController@add');
 Route::post('/dashboard/chapters/update','chaptersController@updat');
 Route::get('/dashboard/section/{section_id}/chapters/update/{id}','chaptersController@update');
 Route::get('/dashboard/section/{section_id}/chapters/show/{id}','chaptersController@show');
-Route::delete('/dashboard/section/{section_id}/chapters/delete','chaptersController@delete');
+Route::delete('/dashboard/chapters/delete','chaptersController@delete');
 
 //Users
 Route::get('/dashboard/users','userController@list');
@@ -70,4 +70,6 @@ Route::delete('/dashboard/users/delete','userController@delete');
 Route::get('/dashboard/users/update/{id}','userController@update');
 Route::post('/dashboard/users/update','userController@updat');
 
-//
+//DASHBOARD
+Route::get('/dashboard/users/statistics','dashboardController@users_statistics');
+Route::get('/dashboard/notebooks/statistics','dashboardController@notebooks_statistics');

@@ -10,7 +10,7 @@ class notebooksController extends Controller
 {
     //notebooks
     public function notebooks(){
-      return view('dashboard.desktop.notebooks');
+      return view('desktop.notebooks');
     }
 
     //LISTING OF NOTEBOOKS
