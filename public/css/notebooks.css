@@ -36,12 +36,14 @@
 }
 .notes-container>li>a{
   text-decoration: none;
-  color:#000;
+  color: #000;
   font-family: Raleway;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 14px;
-  margin: 2em 0 1em 2em;
+  padding: 1.5em 0 1.5em 2em;
+  width:100%;
+  border-bottom:1px solid #f3f3f3;
   display: inline-block;
 }
 /* Sub notes */
@@ -68,10 +70,11 @@
   color: #656c73;
   display: inline-block;
   font-family: Raleway;
-  margin: .5em 0 0.5em 1.5em;
+  margin: 0.5em 1em;
   font-weight: 600;
-  font-size: 15px;
-  flex:1;
+  font-size: 14px;
+  flex: 1;
+  line-height: 25px;
 }
 /* Last notes */
 .lastnotes-container{
