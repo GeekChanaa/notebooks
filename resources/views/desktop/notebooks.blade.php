@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="{{asset('css/jquery-ui.min.css')}}">
-    <link rel="stylesheet" href="{{asset('css/dashboard.css')}}">
+    <link rel="stylesheet" href="{{asset('css/notebooks.css')}}">
     <title></title>
   </head>
   <body>
@@ -76,6 +76,6 @@
     integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
     crossorigin="anonymous"></script>
     <script src="{{asset('js/jquery-ui.min.js')}}"></script>
-    <script src="{{asset('js/dashboard.js')}}"></script>
+    <script src="{{asset('js/notebooks.js')}}"></script>
   </body>
 </html>
