@@ -58,7 +58,6 @@
 }
 .subnotes-container>li{
   list-style:none;
-  display: flex;
   max-height: 40px;
   transition:all .5s cubic-bezier(0.19, 1, 0.22, 1);
 }
@@ -73,19 +72,21 @@
   margin: 0.5em 1em;
   font-weight: 600;
   font-size: 14px;
-  flex: 1;
   line-height: 25px;
 }
 /* Last notes */
 .lastnotes-container{
-  overflow: hidden;
-  position: relative;
-  left: 100px;
-  transition:all .5s cubic-bezier(0.19, 1, 0.22, 1);
-  flex:1;
+  position: absolute;
+  z-index: -1;
+  height: 100vh;
+  width: 250px;
+  left: 0;
+  top: 0;
+  padding: 1em .5em;
+  background: black;
 }
 .lastnotes-container.open{
-  left: 0;
+  left: 250px;
 }
 .lastnotes-container>li{
   list-style:none;
