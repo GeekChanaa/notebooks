@@ -11,6 +11,13 @@
       <div class="sidebar">
         <ul class="notes-container">
           <li>
+            <div class="note-bg">
+            </div>
+            <svg version="1.1" id="bookmark" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+            	 viewBox="0 0 56.868 56.868" style="enable-background:new 0 0 56.868 56.868;" xml:space="preserve">
+            	<path d="M46.934,0.011V0h-36.91c-3.358,0-6.09,2.731-6.09,6.09v50.778l19-12.666l19,12.666V32v-7V14h2v11h9V6.136
+            		C52.934,2.819,50.262,0.096,46.934,0.011z"/>
+            </svg>
             <a href="#">Projects</a>
             <ul class="subnotes-container">
               <li>
@@ -38,6 +45,13 @@
             </ul>
           </li>
           <li>
+            <div class="note-bg">
+            </div>
+            <svg version="1.1" id="bookmark" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+            viewBox="0 0 56.868 56.868" style="enable-background:new 0 0 56.868 56.868;" xml:space="preserve">
+            <path d="M46.934,0.011V0h-36.91c-3.358,0-6.09,2.731-6.09,6.09v50.778l19-12.666l19,12.666V32v-7V14h2v11h9V6.136
+            C52.934,2.819,50.262,0.096,46.934,0.011z"/>
+            </svg>
             <a href="#">Todos</a>
             <ul class="subnotes-container">
               <li>
