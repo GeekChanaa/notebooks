@@ -120,7 +120,7 @@
       </div>
     </div>
   </div>
-  <div class="chart-container">
+  <div class="chart-container flex-container">
     <div class="chart-header">
       <span>Last Year Numbers</span>
     </div>
