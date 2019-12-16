@@ -1,0 +1,111 @@
+/* General */
+
+*{
+  padding: 0;
+  margin:0;
+  box-sizing: border-box;
+}
+:root{
+  --main-color:#fff;
+}
+
+
+.wrapper{
+  position: relative;
+  z-index: 10;
+  margin:0;
+  background: #FBFBFC;
+}
+
+/* ---  Main content start --- */
+.main-content{
+  flex:1;
+}
+
+/* ---  Main content finish --- */
+
+/* --- Sidebar start --- */
+
+.sidebar{
+  background: var(--main-color);
+  width: 250px;
+  height: 100vh;
+  border-right:1px solid #AEB4CD;
+}
+/* Notes */
+.notes-container{
+
+}
+.notes-container>li{
+  list-style:none;
+  background: var(--main-color);
+}
+.notes-container>li>a{
+  width:100%;
+  text-decoration: none;
+  color: #000;
+  font-family: Raleway;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 14px;
+  padding: 1.5em 0 1.5em 2em;
+  width:100%;
+  border-bottom:1px solid #f3f3f3;
+  display: inline-block;
+}
+/* Sub notes */
+.subnotes-container{
+  background: #f7f7f7;
+  max-height: 0;
+  overflow: hidden;
+  transition:all .5s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.subnotes-container>li{
+  background: #f7f7f7;
+  list-style:none;
+  transition:all .5s cubic-bezier(0.19, 1, 0.22, 1);
+}
+.subnotes-container>li>a{
+  width: 100%;
+  text-decoration: none;
+  color: #333333;
+  display: inline-block;
+  font-family: Raleway;
+  padding: 0.8em 3em;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 25px;
+  border-bottom: 1px solid #efefef;
+}
+/* Last notes */
+.lastnotes-container{
+  position: absolute;
+  z-index: -1;
+  height: 100vh;
+  width: 250px;
+  left: -10px;
+  top: 0;
+  padding: 1em .5em;
+  background: black;
+  transition:all .7s cubic-bezier(0.19, 1, 0.22, 1);
+}
+.lastnotes-container.open{
+  left: 250px;
+}
+.lastnotes-container>li{
+  list-style:none;
+}
+.lastnotes-container>li>a{
+  text-decoration: none;
+  color: #656c73;
+  display: inline-block;
+  font-family: Raleway;
+  margin: .5em 0 0.5em 1.5em;
+  font-weight: 600;
+  font-size: 13px;
+}
+
+
+
+/* --- Sidebar finish --- */

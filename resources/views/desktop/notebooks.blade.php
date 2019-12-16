@@ -7,7 +7,7 @@
     <title></title>
   </head>
   <body>
-    <div class="container">
+    <div class="wrapper">
       <div class="sidebar">
         <ul class="notes-container">
           <li>
@@ -18,10 +18,10 @@
                   Something 1
                 </a>
                 <ul class="lastnotes-container">
-                  <li><a href="#">Test 1</a></li>
-                  <li><a href="#"> Test 2</a></li>
-                  <li><a href="#"> Test 3</a></li>
-                  <li><a href="#"> Test 4</a></li>
+                  <li><a href="#">Another1</a></li>
+                  <li><a href="#"> Another2</a></li>
+                  <li><a href="#"> Another3</a></li>
+                  <li><a href="#"> Another4</a></li>
                 </ul>
               </li>
               <li>
@@ -29,10 +29,10 @@
                   Something 2
                 </a>
                 <ul class="lastnotes-container">
-                  <li><a href="#">Test 1</a></li>
-                  <li><a href="#"> Test 2</a></li>
-                  <li><a href="#"> Test 3</a></li>
-                  <li><a href="#"> Test 4</a></li>
+                  <li><a href="#">New1</a></li>
+                  <li><a href="#"> New2</a></li>
+                  <li><a href="#"> New3</a></li>
+                  <li><a href="#"> New4</a></li>
                 </ul>
               </li>
             </ul>
@@ -45,10 +45,10 @@
                   Something 1
                 </a>
                 <ul class="lastnotes-container">
-                  <li><a href="#">Test 1</a></li>
-                  <li><a href="#"> Test 2</a></li>
-                  <li><a href="#"> Test 3</a></li>
-                  <li><a href="#"> Test 4</a></li>
+                  <li><a href="#">Hopaa 1</a></li>
+                  <li><a href="#"> Hopaa 2</a></li>
+                  <li><a href="#"> Hopaa 3</a></li>
+                  <li><a href="#"> Hopaa 4</a></li>
                 </ul>
               </li>
               <li>
@@ -66,10 +66,8 @@
           </li>
         </ul>
       </div>
-
-      <div class="main-content">
-
-      </div>
+    </div>
+    <div class="main-content">
     </div>
     <script
     src="https://code.jquery.com/jquery-3.4.1.min.js"
