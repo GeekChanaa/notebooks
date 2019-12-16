@@ -120,7 +120,7 @@
       </div>
     </div>
   </div>
-  <div class="chart-container">
+  <div class="chart-container flex-container">
     <div class="chart-header">
       <span>Last Year Numbers</span>
     </div>
@@ -155,25 +155,38 @@
       </div>
     </div>
   </div>
-  <div class="table-container">
-    <table class="table table-striped table-primary">
-      <th>Users</th>
-      <th>Notebooks</th>
-      <th>Sections</th>
-      <th>Chapters</th>
-      <th>Pages</th>
-      @foreach($list_users as $user)
-      <tr>
-        <td>{{$user->user_id}}</td>
-        <td>{{$user->nbr_notebooks}}</td>
-        <td>{{$user->nbr_sections}}</td>
-        <td>{{$user->nbr_chapters}}</td>
-        <td>{{$user->nbr_pages}}</td>
-      </tr>
 
-      @endforeach
-    </table>
-  </div>
+  <div class="table100 ver3 m-b-110">
+					<div class="table100-head">
+						<table>
+							<thead>
+								<tr class="row100 head">
+									<th class="cell100 column1">Users</th>
+									<th class="cell100 column2">Notebooks</th>
+									<th class="cell100 column3">Sections</th>
+									<th class="cell100 column4">Chapters</th>
+									<th class="cell100 column5">Pages</th>
+								</tr>
+							</thead>
+						</table>
+					</div>
+
+					<div class="table100-body js-pscroll">
+						<table>
+							<tbody>
+                @foreach($list_users as $user)
+								<tr class="row100 body">
+									<td class="cell100 column1">{{$user->user_id}}</td>
+									<td class="cell100 column2">{{$user->nbr_notebooks}}</td>
+									<td class="cell100 column3">{{$user->nbr_sections}}</td>
+									<td class="cell100 column4">{{$user->nbr_chapters}}</td>
+									<td class="cell100 column5">{{$user->nbr_pages}}</td>
+								</tr>
+                @endforeach
+							</tbody>
+						</table>
+					</div>
+				</div>
   <div class="map-container">
     <div id="world-map" class="col-lg-7">
 

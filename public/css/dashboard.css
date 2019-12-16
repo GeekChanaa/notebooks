@@ -317,9 +317,12 @@
 .sidebar-hcontent .name{
   color:white;
   display: block;
+  font-family: 'Poppins SemiBold';
+  font-size: 1.2em;
 }
 .sidebar-hcontent .job{
   color:grey;
+  font-family: 'Poppins Light';
 }
 
 .sb-hp , .sb-hp-collapse{
@@ -422,8 +425,10 @@
 }
 .chart-container{
   background-color:#191f28 !important;
-  height:70vh;
-  margin: 20px;
+  height:80vh;
+  margin-left: 30px;
+  margin-right: 10px;
+  margin-top:30px;
   border-radius: 10px;
   box-shadow: 0 1px 4px 0 rgba(0,0,0,0.1);
 }
@@ -512,4 +517,15 @@
 .card-footer-content .card-s2, .card-content .card-s2{
   font-family: 'Poppins Light';
   font-size: 1em;
+}
+.user-sb-info{
+  color:white;
+}
+
+.user-sb-info .sp-1{
+  font-family: 'Poppins SemiBold';
+  font-size: 1.3em;
+}
+.user-sb-info .sp-2{
+  font-family: 'Poppins Light';
 }

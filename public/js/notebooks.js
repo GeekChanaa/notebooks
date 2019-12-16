@@ -1,7 +1,7 @@
 // First sidebar animation
 $(".notes-container>li>a").click(function(e){
   var num_elements=$(this).next().children().length;
-  var total_length=($(this).next().find("a").outerHeight())*num_elements;
+  var total_length=$(this).next().children().height()*num_elements;
   if($(this).next().css('max-height')=="0px"){
       $(this).css({
         'color':'#fff',
