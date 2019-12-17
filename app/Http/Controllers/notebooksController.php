@@ -5,12 +5,31 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\notebook;
 use App\User;
+use auth;
+use Response;
 
 class notebooksController extends Controller
 {
+  /*
+  MAIN WEBSITE
+  PAGES
+  */
     //notebooks
     public function notebooks(){
-      return view('desktop.notebooks');
+      $list_notebooks = notebook::where('user_id','=',Auth::user()->id)->get();
+      $data=[
+        'list_notebooks' => $list_notebooks,
+      ];
+      return view('desktop.notebooks')->with($data);
+    }
+    // Add new notebook
+    public function add_notebook(Request $request){
+        $notebook = new notebook;
+        $notebook->user_id = Auth::user()->id;
+        $notebook->title = $request->title;
+        $notebook->visibility = $request->visibility;
+        $notebook->save();
+        return Response::json(array('success'=>true,'notebook'=>$notebook));
     }
 
     //LISTING OF NOTEBOOKS

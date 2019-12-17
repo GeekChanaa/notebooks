@@ -15,12 +15,18 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::group(['middleware'=>'logged_in'],function(){
+  // NOTEBOOKS
+  Route::get('/notebooks','notebooksController@notebooks');
+  Route::post('/ajax/addnotebook','notebooksController@add_notebook');
+});
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-// NOTEBOOKS
-Route::get('/notebooks','notebooksController@notebooks');
+
+
 
 
 //Dashboard

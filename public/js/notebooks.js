@@ -17,22 +17,13 @@ $(".notes-container>li>a").click(function(e){
       });
       $(this).next().css('max-height',0);
       $(this).next().find('.lastnotes-container.open').removeClass('open');
-<<<<<<< HEAD
-=======
       $(this).siblings(".note-bg").css('width','59px');
->>>>>>> c7ed0d8b9df5fa0a2b35dba385ec3c98bd3f2749
 
   }
 });
 
 //Second sidebar animation
 $(".subnotes-container>li>a").click(function(e){
-<<<<<<< HEAD
-    $(".lastnotes-container").each(function(e){
-      $(this).removeClass('open');
-    });
-      $(this).next().toggleClass('open');
-=======
     $(this).next().toggleClass('open');
     $(".lastnotes-container.open").not($(this).next()).each(function(e){
       $(this).removeClass('open');
@@ -47,5 +38,4 @@ var colors = ['#e74c3c', '#3498db', '#27ae60', '#9b59b6','#f1c40f','#1abc9c','#2
 
 $(".notes-container>li .note-bg").each(function(index){
   $(this).css('background',colors[index]);
->>>>>>> c7ed0d8b9df5fa0a2b35dba385ec3c98bd3f2749
 });
