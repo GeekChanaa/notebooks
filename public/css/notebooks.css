@@ -15,6 +15,7 @@
   z-index: 10;
   margin:0;
   background: #FBFBFC;
+  overflow: hidden;
 }
 
 /* ---  Main content start --- */
@@ -30,8 +31,9 @@
   background: var(--main-color);
   width: 250px;
   height: 100vh;
-  border-right:1px solid #AEB4CD;
-  background: #fff;
+  webkit-box-shadow: 4px 0px 11px 0px rgba(0,0,0,0.01);
+  -moz-box-shadow: 4px 0px 11px 0px rgba(0,0,0,0.01);
+  box-shadow: 4px 0px 11px 0px rgba(0,0,0,0.01);
 }
 /* Notes */
 .notes-container{
@@ -39,36 +41,38 @@
 }
 .notes-container>li{
   list-style:none;
-  background: #fff;
+  background: var(--main-color);
   position: relative;
 }
 .notes-container>li>a{
   width:100%;
   text-decoration: none;
-  color: #000;
+  color: #8a8a8a;
   font-family: Raleway;
   font-weight: 700;
   text-transform: uppercase;
-  font-size: 14px;
-  padding: 1.5em 0 1.5em 5em;
+  font-size: 13px;
+  padding: 1.5em 0 1.5em 4.2em;
   width:100%;
-  border-bottom:1px solid #f3f3f3;
   display: inline-block;
   position: relative;
   transition:all .5s cubic-bezier(0.19, 1, 0.22, 1);
 }
-.notes-container>li svg{
+.notes-container>li svg,.subnotes-container>li svg{
   position: absolute;
   left:21px;
-  top: 21px;
-  width: 17px;
-  height: 17px;
-  fill: #fff;
+  top: 20px;
+  width: 15px;
+  height: 15px;
+  fill:#525252;
+  transition:all .5s cubic-bezier(0.19, 1, 0.22, 1);
 }
 .note-bg{
-  height:59px;
-  width:59px;
+  width: 6px;
+  height: 59px;
+  right:0;
   position: absolute;
+  z-index: 10;
   transition:all .5s cubic-bezier(0.19, 1, 0.22, 1);
 }
 /* Sub notes */
@@ -76,6 +80,8 @@
   background: #f7f7f7;
   max-height: 0;
   overflow: hidden;
+  bottom: 13px;
+  position: relative;
   transition:all .5s cubic-bezier(0.19, 1, 0.22, 1);
 }
 
@@ -87,18 +93,36 @@
 .subnotes-container>li>a{
   width: 100%;
   text-decoration: none;
+  color: #525252;
+  background: #fff;
+  display: inline-block;
+  font-family: Raleway;
+  padding: 0.3em 5.3em;
   color: #333333;
   display: inline-block;
   font-family: Raleway;
   padding: 0.8em 3em;
   font-weight: 600;
-  font-size: 14px;
+  font-size: 13px;
   line-height: 25px;
+  position: relative;
+  transition:background .5s ease-in-out;
+  transition:padding .5s cubic-bezier(0.19, 1, 0.22, 1);
+
+}
+.subnotes-container>li>a:hover{
+  background: #f9f9f9;
+}
+.subnotes-container>li svg{
+  position: absolute;
+  top: 9px;
+  left: 50px;
+  width: 9px;
   border-bottom: 1px solid #efefef;
 }
 /* Last notes */
 .lastnotes-container{
-  position: absolute;
+  position: fixed;
   z-index: -1;
   height: 100vh;
   width: 250px;
